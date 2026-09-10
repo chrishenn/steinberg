@@ -18,6 +18,7 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v7
       with:
+        name: YSUSB_V219_Win.zip
         path: YSUSB_V219_Win.zip
         overwrite: true
   release:
@@ -28,7 +29,8 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v8
         with:
-          path: pkgs/YSUSB_V219_Win.zip
+          name: YSUSB_V219_Win.zip
+          path: pkgs
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:

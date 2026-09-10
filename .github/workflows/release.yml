@@ -20,7 +20,6 @@ jobs:
       with:
         path: YSUSB_V219_Win.zip
         overwrite: true
-        archive: false
   release:
     name: release
     needs: build

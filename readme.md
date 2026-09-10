@@ -14,5 +14,5 @@ git add *
 git commit -am "release: $ver"
 git push
 git tag -a "v$ver" -m "v$ver" 
-git push --tags
+git push --tags -f
 ```
